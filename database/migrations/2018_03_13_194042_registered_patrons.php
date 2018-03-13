@@ -23,7 +23,7 @@ class RegisteredPatrons extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');
-            $table->string('zip_code');
+            $table->char('zip_code', 5);
             $table->string('school_attend');
             $table->string('beginning_package');
             $table->string('ending_package');
