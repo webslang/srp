@@ -14,7 +14,7 @@ class RegisteredPatrons extends Migration
     public function up()
     {
         //
-        Schema::create('registered_patrons', function (Blueprint $table) {
+        Schema::create('patrons', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date_created');
             $table->year('year_created');
@@ -23,11 +23,11 @@ class RegisteredPatrons extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');
-            $table->string('zip_code');
-            $table->string('school_attend');
+            $table->tinyInteger('patron_age');
+            $table->char('zip_code',5);
+            $table->string('school_attended');
             $table->string('beginning_package');
             $table->string('ending_package');
-            $table->string('your_age');
             $table->string('book_reading_promise');
             $table->string('how_did_you_hear');
             $table->string('shirt_sizes');
@@ -43,6 +43,7 @@ class RegisteredPatrons extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('videos');
+        Schema::dropIfExists('patrons');
+
     }
 }
