@@ -32,6 +32,7 @@ class RegisteredPatrons extends Migration
             $table->string('how_did_you_hear');
             $table->string('shirt_sizes');
             $table->string('books_read');
+            $table->string('picture_release');
         });
     }
 

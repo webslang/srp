@@ -41,6 +41,7 @@
                                 <th>How Did You Hear About Us</th>
                                 <th>Shirt Size</th>
                                 <th>Books Read</th>
+                                <th>Picture Release</th>
                                 <th>View</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
@@ -67,6 +68,7 @@
                                             <td>{{$patron->description}}</td>
                                             <td>{{$patron->shirt_size}}</td>
                                             <td>{{$patron->books_read}}</td>
+                                            <td>{{$patron->picture_release}}</td>
 
                                             <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $video->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
                                             <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $video->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
