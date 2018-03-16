@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="year_created" id="video_url" class="form-control input-sm" placeholder="Current Year">
+                                            <input type="text" name="year_created" id="year_created" class="form-control input-sm" placeholder="Current Year">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -87,7 +87,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="branch" name="branch" class="form-control input-sm">
+                                            <select id="programs" name="programs" class="form-control input-sm">
                                                 <option value="">
 
                                                 </option>

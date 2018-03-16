@@ -33,6 +33,7 @@ class RegisteredPatrons extends Migration
             $table->string('shirt_sizes');
             $table->string('books_read');
             $table->string('picture_release');
+            $table->timestamps();
         });
     }
 

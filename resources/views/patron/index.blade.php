@@ -70,10 +70,10 @@
                                             <td>{{$patron->books_read}}</td>
                                             <td>{{$patron->picture_release}}</td>
 
-                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $video->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
-                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $video->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $patron->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
+                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $patron->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                                             <td>
-                                                <form action="{{action('PatronController@destroy', $video->id)}}" method="post">
+                                                <form action="{{action('PatronController@destroy', $patron->id)}}" method="post">
                                                     {{csrf_field()}}
                                                     <input name="_method" type="hidden" value="DELETE">
 

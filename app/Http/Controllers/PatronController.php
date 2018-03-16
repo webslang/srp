@@ -71,7 +71,7 @@ class PatronController extends Controller
 
             'shirt_sizes' => 'required',
 
-            'book_read' => 'required',
+            'books_read' => 'required',
 
         ]);
 
@@ -150,7 +150,7 @@ class PatronController extends Controller
 
             'shirt_sizes' => 'required',
 
-            'book_read' => 'required',
+            'books_read' => 'required',
 
         ]);
 
