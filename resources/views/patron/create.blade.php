@@ -47,16 +47,6 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
-                                            <input type="date" value="" name="date_created" id="date_created" class="form-control input-sm" placeholder="Date Created">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="year_created" id="year_created" class="form-control input-sm" placeholder="Current Year">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
                                             <label>
                                                 What branch are you using to register?
                                             <span class="asteriskField">
@@ -278,7 +268,14 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="picture_release" id="picture_release" class="form-control input-sm" placeholder="Do you give consent for TPL to use your like in photograph">
+                                            <select class="form-control input-sm" id="picture_release" name="picture_release">
+                                                <option value="yes">
+                                                    yes
+                                                </option>
+                                                <option value="no">
+                                                    no
+                                                </option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>

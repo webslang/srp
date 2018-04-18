@@ -43,10 +43,6 @@ class PatronController extends Controller
         //
         $this->validate($request, [
 
-            'date_created' => 'required',
-
-            'year_created' => 'required',
-
             'branch' => 'required',
 
             'programs' => 'required',
@@ -72,6 +68,9 @@ class PatronController extends Controller
             'shirt_sizes' => 'required',
 
             'books_read' => 'required',
+
+            'picture_release' => 'required',
+
 
         ]);
 
@@ -122,10 +121,6 @@ class PatronController extends Controller
         //
         $this->validate($request, [
 
-            'date_created' => 'required',
-
-            'year_created' => 'required',
-
             'branch' => 'required',
 
             'programs' => 'required',
@@ -151,6 +146,10 @@ class PatronController extends Controller
             'shirt_sizes' => 'required',
 
             'books_read' => 'required',
+
+            'picture_release' => 'required',
+
+
 
         ]);
 
