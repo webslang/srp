@@ -8,7 +8,7 @@
 
         <section class="content">
 
-            <div class="col-md-12 col-md-offset-0">
+            <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="pull-left"><h3>List of Patrons</h3></div>
@@ -19,28 +19,27 @@
 
                             </div>
                         </div>
-                        <div class="table-container">
+                        <div class="table-container table-responsive pull-left">
                             <table id="mytable" class="table table-bordred table-striped">
 
                                 <thead>
 
                                 <th><input type="checkbox" id="checkall" /></th>
                                 <th>Date Created</th>
-                                <th>Year Created</th>
                                 <th>Branch</th>
                                 <th>Program</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Email</th>
-                                <th>Zip Code</th>
-                                <th>School Attended</th>
-                                <th>Beginning Package</th>
-                                <th>Ending Package</th>
+                                <th>Zip</th>
                                 <th>Age</th>
-                                <th>Book Reading Promise</th>
-                                <th>How Did You Hear About Us</th>
+                                <th>SA</th>
+                                <th>BP</th>
+                                <th>EP</th>
+                                <th>BRP</th>
+                                <th>HDYHAU</th>
                                 <th>Shirt Size</th>
-                                <th>Books Read</th>
+                                <th>BR</th>
                                 <th>Picture Release</th>
                                 <th>View</th>
                                 <th>Edit</th>
@@ -51,22 +50,20 @@
                                     @foreach($patrons as $patron)
                                         <tr>
                                             <td><input type="checkbox" class="checkthis" /></td>
-                                            <td>{{$patron->date_created}}</td>
-                                            <td>{{$patron->year_created}}</td>
+                                            <td>{{$patron->created_at}}</td>
                                             <td>{{$patron->branch}}</td>
                                             <td>{{$patron->programs}}</td>
                                             <td>{{$patron->first_name}}</td>
                                             <td>{{$patron->last_name}}</td>
                                             <td>{{$patron->email}}</td>
+                                            <td>{{$patron->zip_code}}</td>
                                             <td>{{$patron->patron_age}}</td>
-                                            <td>{{$patron->zip_codel}}</td>
                                             <td>{{$patron->school_attended}}</td>
                                             <td>{{$patron->beginning_package}}</td>
                                             <td>{{$patron->ending_package}}</td>
                                             <td>{{$patron->book_reading_promise}}</td>
-                                            <td>{{$patron->how_did_you_hearl}}</td>
-                                            <td>{{$patron->description}}</td>
-                                            <td>{{$patron->shirt_size}}</td>
+                                            <td>{{$patron->how_did_you_hear}}</td>
+                                            <td>{{$patron->shirt_sizes}}</td>
                                             <td>{{$patron->books_read}}</td>
                                             <td>{{$patron->picture_release}}</td>
 

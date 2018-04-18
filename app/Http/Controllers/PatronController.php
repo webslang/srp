@@ -57,17 +57,11 @@ class PatronController extends Controller
 
             'zip_code' => 'required',
 
-            'beginning_package' => 'required',
-
-            'ending_package' => 'required',
-
             'book_reading_promise' => 'required',
 
             'how_did_you_hear' => 'required',
 
             'shirt_sizes' => 'required',
-
-            'books_read' => 'required',
 
             'picture_release' => 'required',
 
@@ -153,12 +147,9 @@ class PatronController extends Controller
 
         ]);
 
-
-        Patron::create($request->all());
-
+        Patron::find($id)->update($request->all());
         return redirect()->route('patron.index')
-
-            ->with('success','Patron created successfully');
+            ->with('success','Patron info updated successfully');
     }
 
     /**

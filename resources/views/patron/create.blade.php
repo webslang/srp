@@ -87,8 +87,8 @@
                                                 <option value="Teen Program">
                                                     Teen Program
                                                 </option>
-                                                <option value="Adult">
-                                                    Adult
+                                                <option value="Adult Program">
+                                                    Adult Program
                                                 </option>
                                             </select>
 
@@ -160,28 +160,6 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
-                                                Have You Received Your Beginning Package?
-                                                <span class="asteriskField">
-                                                 *
-                                            </span>
-                                            </label>
-                                            <input type="text" name="beginning_package" id="beginning_package" class="form-control input-sm" placeholder="Received Beginning Package">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label>
-                                                Have You Received Your Ending Package?
-                                                <span class="asteriskField">
-                                                 *
-                                            </span>
-                                            </label>
-                                            <input type="text" name="ending_package" id="ending_package" class="form-control input-sm" placeholder="Received Ending Package">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label>
                                                 How many books do you promise to read or listen to this summer?
                                                 <span class="asteriskField">
                                                  *
@@ -198,7 +176,35 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="how_did_you_hear" id="how_did_you_hear" class="form-control input-sm" placeholder="How Did You Hear About Us">
+                                            <select class="form-control input-sm" id="how_did_you_hear" name="how_did_you_hear">
+                                                <option value="Newspaper">
+                                                    Newspaper
+                                                </option>
+                                                <option value="Radio">
+                                                    Radio
+                                                </option>
+                                                <option value="Television">
+                                                    Television
+                                                </option>
+                                                <option value="TPL Website">
+                                                    TPL website
+                                                </option>
+                                                <option value="Social Media">
+                                                    Social Media (Facebook, Twitter, Instagram)
+                                                </option>
+                                                <option value="TPL staff">
+                                                    TPL staff
+                                                </option>
+                                                <option value="Past Participation">
+                                                    Participated in the past
+                                                </option>
+                                                <option value="School">
+                                                    Through my child's school
+                                                </option>
+                                                <option value="Word of Mouth">
+                                                    From other TPL patrons (word of mouth)
+                                                </option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -238,26 +244,15 @@
                                                         Adult Large
                                                     </option>
                                                     <option value="Adult X-large">
-                                                        Adult X-large
+                                                        Adult XL
                                                     </option>
                                                     <option value="Adult XX-large">
-                                                        Adult XX-large
+                                                        Adult 2XL
                                                     </option>
                                                     <option value="Adult XXX-large">
-                                                        Adult XXX-large
+                                                        Adult 3XL
                                                     </option>
                                                 </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label>
-                                                What is the number of books you have read?
-                                                <span class="asteriskField">
-                                                 *
-                                            </span>
-                                            </label>
-                                            <input type="text" name="books_read" id="books_read" class="form-control input-sm" placeholder="Books Read">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -284,7 +279,7 @@
 
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <input type="submit"  value="Save" class="btn btn-success btn-block">
-                                        <a href="{{ route('patron.index') }}" class="btn btn-info btn-block" >Back</a>
+                                        <a href="{{ route('patron') }}" class="btn btn-info btn-block" >Back</a>
                                     </div>
 
                                 </div>
