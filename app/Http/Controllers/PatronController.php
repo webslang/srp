@@ -71,7 +71,7 @@ class PatronController extends Controller
 
         Patron::create($request->all());
 
-        return redirect()->route('patron.index')
+        return redirect()->route('patron.create')
 
             ->with('success','Patron created successfully');
     }

@@ -152,9 +152,9 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
-                                                What school do you attend?
+                                                What School or Organization do you attend?
                                             </label>
-                                            <input type="text" name="school_attended" id="school_attended" class="form-control input-sm" placeholder="School Attended">
+                                            <input type="text" name="school_attended" id="school_attended" class="form-control input-sm" placeholder="School / Organization Attended ">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -273,13 +273,14 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <p class="text-center">Prizes available while supplies last!</p>
                                 </div>
 
                                 <div class="row">
 
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <input type="submit"  value="Save" class="btn btn-success btn-block">
-                                        <a href="{{ route('patron.index') }}" class="btn btn-info btn-block" >Back</a>
+                                        <a href="{{ route('patron.create') }}" class="btn btn-info btn-block" >Back</a>
                                     </div>
 
                                 </div>

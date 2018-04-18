@@ -24,7 +24,7 @@ class RegisteredPatrons extends Migration
             $table->string('email');
             $table->tinyInteger('patron_age');
             $table->char('zip_code',5);
-            $table->string('school_attended');
+            $table->string('school_attended')->nullable(true);
             $table->string('beginning_package')->default('no');
             $table->string('ending_package')->default('no');
             $table->string('book_reading_promise');
