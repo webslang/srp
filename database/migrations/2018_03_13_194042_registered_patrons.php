@@ -25,6 +25,7 @@ class RegisteredPatrons extends Migration
             $table->tinyInteger('patron_age');
             $table->char('zip_code',5);
             $table->string('school_attended')->nullable(true);
+            $table->string('grade_level');
             $table->string('beginning_package')->default('no');
             $table->string('ending_package')->default('no');
             $table->string('book_reading_promise');
@@ -34,6 +35,8 @@ class RegisteredPatrons extends Migration
             $table->string('picture_release');
         });
     }
+
+
 
     /**
      * Reverse the migrations.

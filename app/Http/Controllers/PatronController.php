@@ -57,6 +57,8 @@ class PatronController extends Controller
 
             'zip_code' => 'required',
 
+            'grade_level' => 'required',
+
             'book_reading_promise' => 'required',
 
             'how_did_you_hear' => 'required',

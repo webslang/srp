@@ -71,6 +71,14 @@
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
                                     <label>
+                                        Current Grade Level
+                                    </label>
+                                    <p>{{$patron->grade_level}}</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <label>
                                         Book Reading Promise
                                     </label>
                                     <p>{{$patron->book_reading_promise}}</p>
@@ -125,7 +133,7 @@
                                     <p>{{$patron->books_read}}</p>
                                 </div>
                             </div>
-                        </div>
+
 
 
                             <div class="row">

@@ -59,6 +59,7 @@
                                             <td>{{$patron->zip_code}}</td>
                                             <td>{{$patron->patron_age}}</td>
                                             <td>{{$patron->school_attended}}</td>
+                                            <td>{{$patron->grade_level}}</td>
                                             <td>{{$patron->beginning_package}}</td>
                                             <td>{{$patron->ending_package}}</td>
                                             <td>{{$patron->book_reading_promise}}</td>
