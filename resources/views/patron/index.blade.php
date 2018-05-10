@@ -7,11 +7,11 @@
     <div class="row">
 
         <section class="content">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <form method="GET" action="{{ route('patron.index') }}" accept-charset="UTF-8">
                     <div id="custom-search-input">
                         <div class="input-group col-md-8">
-                            <input  type="text" class="form-control input-lg" placeholder="enter word" name="q" />
+                            <input  type="text" class="form-control input-lg" placeholder="enter patron's name" name="q" />
                             <span class="input-group-btn">
                         <button  class="btn btn-info btn-lg" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
@@ -46,6 +46,7 @@
                                 <th>Zip</th>
                                 <th>Age</th>
                                 <th>SA</th>
+                                <th>GL</th>
                                 <th>BP</th>
                                 <th>EP</th>
                                 <th>BRP</th>

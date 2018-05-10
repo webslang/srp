@@ -35,7 +35,7 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">TPL's Summer Reading - Patron Registration</h3>
+                        <h3 class="panel-title">TPL's Summer Reading - Patron Registration (for group registration please see staff.)</h3>
                     </div>
 
                     <div class="panel-body">
@@ -216,6 +216,12 @@
                                                 <option value="12th Grade">
                                                     12th Grade
                                                 </option>
+                                                <option value="College Student">
+                                                    College Student
+                                                </option>
+                                                <option value="Nonstudent">
+                                                   Nonstudent
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
@@ -287,31 +293,31 @@
                                                     <option value="Toddler 4T">
                                                         Toddler (4T)
                                                     </option>
-                                                    <option value="Youth Small">
+                                                    <option value="Youth S">
                                                         Youth Small
                                                     </option>
-                                                    <option value="Youth Medium">
+                                                    <option value="Youth M">
                                                         Youth Medium
                                                     </option>
-                                                    <option value="Youth Large">
+                                                    <option value="Youth L">
                                                         Youth Large
                                                     </option>
-                                                    <option value="Adult Small">
+                                                    <option value="Adult Sm">
                                                         Adult Small
                                                     </option>
-                                                    <option value="Adult Medium">
+                                                    <option value="Adult M">
                                                         Adult Medium
                                                     </option>
-                                                    <option value="Adult Large">
+                                                    <option value="Adult L">
                                                         Adult Large
                                                     </option>
-                                                    <option value="Adult X-large">
+                                                    <option value="Adult XL">
                                                         Adult XL
                                                     </option>
-                                                    <option value="Adult XX-large">
+                                                    <option value="Adult 2XL">
                                                         Adult 2XL
                                                     </option>
-                                                    <option value="Adult XXX-large">
+                                                    <option value="Adult 3XL">
                                                         Adult 3XL
                                                     </option>
                                                 </select>

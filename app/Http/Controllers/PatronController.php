@@ -131,6 +131,8 @@ class PatronController extends Controller
 
             'zip_code' => 'required',
 
+            'grade_level' => 'required',
+
             'beginning_package' => 'required',
 
             'ending_package' => 'required',

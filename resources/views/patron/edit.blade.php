@@ -160,6 +160,71 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
+                                                What is your current grade level?
+                                                <span class="asteriskField">
+                                                 *
+                                            </span>
+                                            </label>
+                                            <select id="grade_level" name="grade_level" class="form-control input-sm">
+                                                <option value="{{$patron->grade_level}}">
+                                                    {{$patron->grade_level}}
+                                                </option>
+                                                <option value="Pre-K">
+                                                    Pre-K
+                                                </option>
+                                                <option value="Kindergarten">
+                                                    Kindergarten
+                                                </option>
+                                                <option value="1st Grade">
+                                                    1st Grade
+                                                </option>
+                                                <option value="2nd Grade">
+                                                    2nd Grade
+                                                </option>
+                                                </option>
+                                                <option value="3rd Grade">
+                                                    3rd Grade
+                                                </option>
+                                                <option value="4th Grade">
+                                                    4th Grade
+                                                </option>
+                                                <option value="5th Grade">
+                                                    5th Grade
+                                                </option>
+                                                <option value="6th Grade">
+                                                    6th Grade
+                                                </option>
+                                                <option value="7th Grade">
+                                                    7th Grade
+                                                </option>
+                                                <option value="8th Grade">
+                                                    8th Grade
+                                                </option>
+                                                </option>
+                                                <option value="9th Grade">
+                                                    9th Grade
+                                                </option>
+                                                <option value="10th Grade">
+                                                    10th Grade
+                                                </option>
+                                                <option value="11th Grade">
+                                                    11th Grade
+                                                </option>
+                                                <option value="12th Grade">
+                                                    12th Grade
+                                                </option>
+                                                <option value="College Student">
+                                                    College Student
+                                                </option>
+                                                <option value="Nonstudent">
+                                                    Nonstudent
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>
                                                 How many books do you promise to read or listen to this summer?
                                                 <span class="asteriskField">
                                                  *
