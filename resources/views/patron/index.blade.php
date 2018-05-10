@@ -7,8 +7,20 @@
     <div class="row">
 
         <section class="content">
-
             <div class="col-md-8 col-md-offset-2">
+                <form method="GET" action="{{ route('patron.index') }}" accept-charset="UTF-8">
+                    <div id="custom-search-input">
+                        <div class="input-group col-md-8">
+                            <input  type="text" class="form-control input-lg" placeholder="enter word" name="q" />
+                            <span class="input-group-btn">
+                        <button  class="btn btn-info btn-lg" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                        </div>
+                    </div>
+                </form>
+                <br>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="pull-left"><h3>List of Patrons</h3></div>

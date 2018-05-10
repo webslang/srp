@@ -6,6 +6,7 @@ use App\Patron;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
+
 class PatronController extends Controller
 {
     /**
@@ -13,12 +14,11 @@ class PatronController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
-        $patrons = Patron::orderBy('id','DESC')->paginate(5);
+        $patrons = Patron::search($request->input('q'))->get();
 
-        return view('Patron.index',compact('patrons'));
+        return view('patron.index', compact('patrons'));
     }
 
     /**

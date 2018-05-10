@@ -168,7 +168,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="grade_level" name="branch" class="form-control input-sm">
+                                            <select id="grade_level" name="grade_level" class="form-control input-sm">
                                                 <option value="">
 
                                                 </option>
