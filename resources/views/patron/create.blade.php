@@ -293,22 +293,22 @@
                                                     <option value="Toddler 4T">
                                                         Toddler (4T)
                                                     </option>
-                                                    <option value="Youth S">
+                                                    <option value="Youth Small">
                                                         Youth Small
                                                     </option>
-                                                    <option value="Youth M">
+                                                    <option value="Youth Medium">
                                                         Youth Medium
                                                     </option>
-                                                    <option value="Youth L">
+                                                    <option value="Youth Large">
                                                         Youth Large
                                                     </option>
-                                                    <option value="Adult Sm">
+                                                    <option value="Adult Small">
                                                         Adult Small
                                                     </option>
-                                                    <option value="Adult M">
+                                                    <option value="Adult Medium">
                                                         Adult Medium
                                                     </option>
-                                                    <option value="Adult L">
+                                                    <option value="Adult Large">
                                                         Adult Large
                                                     </option>
                                                     <option value="Adult XL">

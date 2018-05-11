@@ -15,4 +15,9 @@ Route::get('/', function () {
     return view('patron.create');
 });
 
+
+
 Route::resource('patron','PatronController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.app')
 
 @section('content')
 
@@ -312,13 +312,13 @@
                                                 <option value="Adult Large">
                                                     Adult Large
                                                 </option>
-                                                <option value="Adult X-large">
+                                                <option value=" Adult XL">
                                                     Adult XL
                                                 </option>
-                                                <option value="Adult XX-large">
+                                                <option value="Adult 2XL">
                                                     Adult 2XL
                                                 </option>
-                                                <option value="Adult XXX-large">
+                                                <option value="Adult 3XL">
                                                     Adult 3XL
                                                 </option>
                                             </select>

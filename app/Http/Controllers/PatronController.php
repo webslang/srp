@@ -9,6 +9,12 @@ use Carbon\Carbon;
 
 class PatronController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -152,7 +158,7 @@ class PatronController extends Controller
         ]);
 
         Patron::find($id)->update($request->all());
-        return redirect()->route('patron.index')
+        return redirect()->route('patron.edit', array($id))
             ->with('success','Patron info updated successfully');
     }
 

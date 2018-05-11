@@ -1,5 +1,4 @@
-@extends('layouts.default')
-
+@extends('layouts.app')
 
 
 @section('content')
@@ -7,14 +6,14 @@
     <div class="row">
 
         <section class="content">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 offset-1">
                 <form method="GET" action="{{ route('patron.index') }}" accept-charset="UTF-8">
                     <div id="custom-search-input">
                         <div class="input-group col-md-8">
                             <input  type="text" class="form-control input-lg" placeholder="enter patron's name" name="q" />
-                            <span class="input-group-btn">
+                            <span class="input-group-prepend">
                         <button  class="btn btn-info btn-lg" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
+                            <i class="fas fa-search"></i>
                         </button>
                     </span>
                         </div>
@@ -23,8 +22,8 @@
                 <br>
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="pull-left"><h3>List of Patrons</h3></div>
-                        <div class="pull-right">
+                        <div class="float-left"><h3>List of Patrons</h3></div>
+                        <div class="float-right">
                             <div class="btn-group">
 
                                 <a href="{{ route('patron.create') }}" class="btn btn-info" >Add New</a>
@@ -45,14 +44,14 @@
                                 <th>Email</th>
                                 <th>Zip</th>
                                 <th>Age</th>
-                                <th>SA</th>
-                                <th>GL</th>
-                                <th>BP</th>
-                                <th>EP</th>
-                                <th>BRP</th>
-                                <th>HDYHAU</th>
+                                <th>School Attend</th>
+                                <th>Grade Level</th>
+                                <th>Begining Package</th>
+                                <th>Ending Package</th>
+                                <th>Book Reading Promise</th>
+                                <th>How Did You Hear</th>
                                 <th>Shirt Size</th>
-                                <th>BR</th>
+                                <th>Books Read</th>
                                 <th>Picture Release</th>
                                 <th>View</th>
                                 <th>Edit</th>
@@ -81,14 +80,14 @@
                                             <td>{{$patron->books_read}}</td>
                                             <td>{{$patron->picture_release}}</td>
 
-                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $patron->id)}}" ><span class="glyphicon glyphicon-eye-open"></span></a></td>
-                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $patron->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $patron->id)}}" ><span class="far fa-eye"></span></a></td>
+                                            <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $patron->id)}}" ><span class="far fa-edit"></span></a></td>
                                             <td>
                                                 <form action="{{action('PatronController@destroy', $patron->id)}}" method="post">
                                                     {{csrf_field()}}
                                                     <input name="_method" type="hidden" value="DELETE">
 
-                                                    <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-trash"></span></button>
+                                                    <button class="btn btn-danger btn-xs" type="submit"><span class="far fa-trash-alt"></span></button>
                                             </td>
                                         </tr>
                                     @endforeach
