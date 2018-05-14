@@ -53,20 +53,20 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="branch" name="branch" class="form-control input-sm">
+                                            <select id="branch" name="branch" class="form-control input-sm" value="{{ old('branch') }}">
                                                 <option value="">
 
                                                 </option>
-                                                <option value="Main Branch">
+                                                <option value="Main Branch" @if (old('branch') == 'Main Branch') selected="selected" @endif>
                                                     Main Branch
                                                 </option>
-                                                <option value="Weaver Bolden Branch">
+                                                <option value="Weaver Bolden Branch" @if (old('branch') == 'Weaver Bolden Branch') selected="selected" @endif>
                                                     Weaver Bolden Branch
                                                 </option>
-                                                <option value="Brown Branch">
+                                                <option value="Brown Branch" @if (old('branch') == 'Brown Branch') selected="selected" @endif>
                                                     Brown Branch
                                                 </option>
-                                                <option value="Bookmobile">
+                                                <option value="Bookmobile" @if (old('branch') == 'Bookmobile') selected="selected" @endif>
                                                     Bookmobile
                                                 </option>
                                             </select>
@@ -80,17 +80,17 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="programs" name="programs" class="form-control input-sm">
+                                            <select id="programs" name="programs" class="form-control input-sm" value="{{ old('programs') }}">
                                                 <option value="">
 
                                                 </option>
-                                                <option value="Main Branch">
+                                                <option value="Kids Program" @if (old('programs') == 'Kids Program') selected="selected" @endif>
                                                     Kids Program
                                                 </option>
-                                                <option value="Teen Program">
+                                                <option value="Teen Program" @if (old('programs') == 'Teen Program') selected="selected" @endif>
                                                     Teen Program
                                                 </option>
-                                                <option value="Adult Program">
+                                                <option value="Adult Program" @if (old('programs') == 'Adult Program') selected="selected" @endif>
                                                     Adult Program
                                                 </option>
                                             </select>
@@ -105,7 +105,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+                                            <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name" value="{{ old('first_name') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -116,7 +116,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+                                            <input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name" value="{{ old('last_name') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -127,7 +127,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="email" id="email" class="form-control input-sm" placeholder="johndoe@exampl.com">
+                                            <input type="text" name="email" id="email" class="form-control input-sm" placeholder="johndoe@exampl.com" value="{{ old('email') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -138,7 +138,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="patron_age" id="patron_age" class="form-control input-sm" placeholder="Your Age">
+                                            <input type="text" name="patron_age" id="patron_age" class="form-control input-sm" placeholder="Your Age" value="{{ old('patron_age') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -149,7 +149,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="zip_code" id="zip_code" class="form-control input-sm" placeholder="Zip Code">
+                                            <input type="text" name="zip_code" id="zip_code" class="form-control input-sm" placeholder="Zip Code" value="{{ old('zip_code') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -157,7 +157,7 @@
                                             <label>
                                                 What School or Organization do you attend?
                                             </label>
-                                            <input type="text" name="school_attended" id="school_attended" class="form-control input-sm" placeholder="School / Organization Attended ">
+                                            <input type="text" name="school_attended" id="school_attended" class="form-control input-sm" placeholder="School / Organization Attended " value="{{ old('school_attended') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -168,58 +168,56 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="grade_level" name="grade_level" class="form-control input-sm">
+                                            <select id="grade_level" name="grade_level" class="form-control input-sm" value="{{ old('grade_level') }}">
                                                 <option value="">
 
                                                 </option>
-                                                <option value="Pre-K">
+                                                <option value="Pre-K" @if (old('grade_level') == 'Pre-K') selected="selected" @endif>
                                                     Pre-K
                                                 </option>
-                                                <option value="Kindergarten">
+                                                <option value="Kindergarten" @if (old('grade_level') == 'Pre-K') selected="selected" @endif>
                                                     Kindergarten
                                                 </option>
-                                                <option value="1st Grade">
+                                                <option value="1st Grade" @if (old('grade_level') == '1st Grade') selected="selected" @endif>
                                                     1st Grade
                                                 </option>
-                                                <option value="2nd Grade">
+                                                <option value="2nd Grade" @if (old('grade_level') == '2nd Grade') selected="selected" @endif>
                                                     2nd Grade
                                                 </option>
-                                                </option>
-                                                <option value="3rd Grade">
+                                                <option value="3rd Grade" @if (old('grade_level') == '3rd Grade') selected="selected" @endif>
                                                     3rd Grade
                                                 </option>
-                                                <option value="4th Grade">
+                                                <option value="4th Grade" @if (old('grade_level') == '4th Grade') selected="selected" @endif>
                                                     4th Grade
                                                 </option>
-                                                <option value="5th Grade">
+                                                <option value="5th Grade" @if (old('grade_level') == '5th Grade') selected="selected" @endif>
                                                     5th Grade
                                                 </option>
-                                                <option value="6th Grade">
+                                                <option value="6th Grade" @if (old('grade_level') == '6th Grade') selected="selected" @endif>
                                                     6th Grade
                                                 </option>
-                                                <option value="7th Grade">
+                                                <option value="7th Grade" @if (old('grade_level') == '7th Grade') selected="selected" @endif>
                                                     7th Grade
                                                 </option>
-                                                <option value="8th Grade">
+                                                <option value="8th Grade" @if (old('grade_level') == '8th Grade') selected="selected" @endif>
                                                     8th Grade
                                                 </option>
-                                                </option>
-                                                <option value="9th Grade">
+                                                <option value="9th Grade" @if (old('grade_level') == '9th Grade') selected="selected" @endif>
                                                     9th Grade
                                                 </option>
-                                                <option value="10th Grade">
+                                                <option value="10th Grade" @if (old('grade_level') == '10th Grade') selected="selected" @endif>
                                                     10th Grade
                                                 </option>
-                                                <option value="11th Grade">
+                                                <option value="11th Grade" @if (old('grade_level') == '11th Grade') selected="selected" @endif>
                                                     11th Grade
                                                 </option>
-                                                <option value="12th Grade">
+                                                <option value="12th Grade" @if (old('grade_level') == '12th Grade') selected="selected" @endif>
                                                     12th Grade
                                                 </option>
-                                                <option value="College Student">
+                                                <option value="College Student" @if (old('grade_level') == 'College Student') selected="selected" @endif>
                                                     College Student
                                                 </option>
-                                                <option value="Nonstudent">
+                                                <option value="Nonstudent" @if (old('grade_level') == 'Nonstudent') selected="selected" @endif>
                                                    Nonstudent
                                                 </option>
                                             </select>
@@ -233,7 +231,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="book_reading_promise" id="book_reading_promise" class="form-control input-sm" placeholder="Book Reading Promise">
+                                            <input type="text" name="book_reading_promise" id="book_reading_promise" class="form-control input-sm" placeholder="Book Reading Promise" value="{{ old('book_reading_promise') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -244,32 +242,32 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select class="form-control input-sm" id="how_did_you_hear" name="how_did_you_hear">
-                                                <option value="Newspaper">
+                                            <select class="form-control input-sm" id="how_did_you_hear" name="how_did_you_hear" value="{{ old('how_did_you_hear') }}">
+                                                <option value="Newspaper" @if (old('how_did_you_hear') == 'Newspaper') selected="selected" @endif>
                                                     Newspaper
                                                 </option>
-                                                <option value="Radio">
+                                                <option value="Radio" @if (old('how_did_you_hear') == 'Radio') selected="selected" @endif>
                                                     Radio
                                                 </option>
-                                                <option value="Television">
+                                                <option value="Television" @if (old('how_did_you_hear') == 'Television') selected="selected" @endif>
                                                     Television
                                                 </option>
-                                                <option value="TPL Website">
+                                                <option value="TPL Website" @if (old('how_did_you_hear') == 'TPL Website') selected="selected" @endif>
                                                     TPL website
                                                 </option>
-                                                <option value="Social Media">
+                                                <option value="Social Media" @if (old('how_did_you_hear') == 'Social Media') selected="selected" @endif>
                                                     Social Media (Facebook, Twitter, Instagram)
                                                 </option>
-                                                <option value="TPL staff">
+                                                <option value="TPL Staff" @if (old('how_did_you_hear') == 'TPL Staff') selected="selected" @endif>
                                                     TPL staff
                                                 </option>
-                                                <option value="Past Participation">
+                                                <option value="Past Participation" @if (old('how_did_you_hear') == 'Past Participation') selected="selected" @endif>
                                                     Participated in the past
                                                 </option>
-                                                <option value="School">
+                                                <option value="School" @if (old('how_did_you_hear') == 'School') selected="selected" @endif>
                                                     Through my child's school
                                                 </option>
-                                                <option value="Word of Mouth">
+                                                <option value="Word of Mouth" @if (old('how_did_you_hear') == 'Word of Mouth') selected="selected" @endif>
                                                     From other TPL patrons (word of mouth)
                                                 </option>
                                             </select>
@@ -283,41 +281,41 @@
                                                  *
                                             </span>
                                                 </label>
-                                                <select class="form-control input-sm" id="shirt_sizes" name="shirt_sizes">
+                                                <select class="form-control input-sm" id="shirt_sizes" name="shirt_sizes" value="{{ old('shirt_sizes') }}">
                                                     <option value="">
 
                                                     </option>
-                                                    <option value="Toddler 2T">
+                                                    <option value="Toddler 2T" @if (old('shirt_sizes') == 'Toddler 2T') selected="selected" @endif>
                                                         Toddler (2T)
                                                     </option>
-                                                    <option value="Toddler 4T">
+                                                    <option value="Toddler 4T"  @if (old('shirt_sizes') == 'Toddler 4T') selected="selected" @endif>
                                                         Toddler (4T)
                                                     </option>
-                                                    <option value="Youth Small">
+                                                    <option value="Youth Small"  @if (old('shirt_sizes') == 'Youth Small') selected="selected" @endif>
                                                         Youth Small
                                                     </option>
-                                                    <option value="Youth Medium">
+                                                    <option value="Youth Medium"  @if (old('shirt_sizes') == 'Youth Medium') selected="selected" @endif>
                                                         Youth Medium
                                                     </option>
-                                                    <option value="Youth Large">
+                                                    <option value="Youth Large"  @if (old('shirt_sizes') == 'Youth Large') selected="selected" @endif>
                                                         Youth Large
                                                     </option>
-                                                    <option value="Adult Small">
+                                                    <option value="Adult Small"  @if (old('shirt_sizes') == 'Adult Small') selected="selected" @endif>
                                                         Adult Small
                                                     </option>
-                                                    <option value="Adult Medium">
+                                                    <option value="Adult Medium"  @if (old('shirt_sizes') == 'Adult Medium') selected="selected" @endif>
                                                         Adult Medium
                                                     </option>
-                                                    <option value="Adult Large">
+                                                    <option value="Adult Large"  @if (old('shirt_sizes') == 'Adult Large') selected="selected" @endif>
                                                         Adult Large
                                                     </option>
-                                                    <option value="Adult XL">
+                                                    <option value="Adult XL"  @if (old('shirt_sizes') == 'Adult XL') selected="selected" @endif>
                                                         Adult XL
                                                     </option>
-                                                    <option value="Adult 2XL">
+                                                    <option value="Adult 2XL"  @if (old('shirt_sizes') == 'Adult 2XL') selected="selected" @endif>
                                                         Adult 2XL
                                                     </option>
-                                                    <option value="Adult 3XL">
+                                                    <option value="Adult 3XL"  @if (old('shirt_sizes') == 'Adult 3XL') selected="selected" @endif>
                                                         Adult 3XL
                                                     </option>
                                                 </select>
@@ -331,11 +329,11 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select class="form-control input-sm" id="picture_release" name="picture_release">
-                                                <option value="yes">
+                                            <select class="form-control input-sm" id="picture_release" name="picture_release" value="{{ old('picture_release') }}">
+                                                <option value="yes" @if (old('picture_release') == 'yes') selected="selected" @endif>
                                                     yes
                                                 </option>
-                                                <option value="no">
+                                                <option value="no" @if (old('picture_release') == 'no') selected="selected" @endif>
                                                     no
                                                 </option>
                                             </select>

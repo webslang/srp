@@ -6,7 +6,7 @@
 
         <section class="content">
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 offset-2">
                 @if (count($errors) > 0)
 
                     <div class="alert alert-danger">

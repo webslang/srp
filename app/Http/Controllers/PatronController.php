@@ -9,11 +9,16 @@ use Carbon\Carbon;
 
 class PatronController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
-    }
 
+        $this->middleware('log', ['only' => [
+            'patron',
+        ]]);
+
+    }
 
     /**
      * Display a listing of the resource.
@@ -73,7 +78,6 @@ class PatronController extends Controller
 
             'picture_release' => 'required',
 
-
         ]);
 
 
@@ -82,6 +86,7 @@ class PatronController extends Controller
         return redirect()->route('patron.create')
 
             ->with('success','Patron created successfully');
+
     }
 
     /**
