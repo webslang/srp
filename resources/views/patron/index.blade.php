@@ -85,7 +85,7 @@
                                             <td>
                                                 <form action="{{action('PatronController@destroy', $patron->id)}}" method="post">
                                                     {{csrf_field()}}
-                                                    <input name="_method" type="hidden" value="DELETE">
+                                                    <input name="_method" type="hidden" value="DELETE" disabled>
 
                                                     <button class="btn btn-danger btn-xs" type="submit"><span class="far fa-trash-alt"></span></button>
                                             </td>

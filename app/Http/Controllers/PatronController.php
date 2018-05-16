@@ -10,15 +10,7 @@ use Carbon\Carbon;
 class PatronController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware('auth');
 
-        $this->middleware('log', ['only' => [
-            'patron',
-        ]]);
-
-    }
 
     /**
      * Display a listing of the resource.
@@ -62,9 +54,9 @@ class PatronController extends Controller
 
             'last_name' => 'required',
 
-            'email' => 'required',
+            'email' => 'required|email',
 
-            'patron_age' => 'required',
+            'patron_age' => 'required|numeric',
 
             'zip_code' => 'required',
 
@@ -78,7 +70,14 @@ class PatronController extends Controller
 
             'picture_release' => 'required',
 
-        ]);
+        ],
+            [
+                'email.email'    => 'Please enter correct email format "jon@exampl.com"',
+                'patron_age.numeric'    => 'Please enter numbers only for patron age.',
+            ]
+
+
+            );
 
 
         Patron::create($request->all());
