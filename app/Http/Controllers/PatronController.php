@@ -9,7 +9,10 @@ use Carbon\Carbon;
 
 class PatronController extends Controller
 {
-
+     public function  __construct()
+     {
+         $this->middleware('auth')->only(['index']);
+     }
 
 
     /**

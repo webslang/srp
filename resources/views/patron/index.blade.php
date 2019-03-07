@@ -55,7 +55,7 @@
                                 <th>Picture Release</th>
                                 <th>View</th>
                                 <th>Edit</th>
-                                <th>Delete</th>
+                               <!-- <th>Delete</th>-->
                                 </thead>
                                 <tbody>
                                 @if($patrons->count())
@@ -82,13 +82,13 @@
 
                                             <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@show', $patron->id)}}" ><span class="far fa-eye"></span></a></td>
                                             <td><a class="btn btn-primary btn-xs" href="{{action('PatronController@edit', $patron->id)}}" ><span class="far fa-edit"></span></a></td>
-                                            <td>
+                                        <!-- <td>
                                                 <form action="{{action('PatronController@destroy', $patron->id)}}" method="post">
                                                     {{csrf_field()}}
                                                     <input name="_method" type="hidden" value="DELETE" disabled>
 
                                                     <button class="btn btn-danger btn-xs" type="submit"><span class="far fa-trash-alt"></span></button>
-                                            </td>
+                                            </td>-->
                                         </tr>
                                     @endforeach
                                 @else

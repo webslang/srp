@@ -127,7 +127,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <input type="text" name="email" id="email" class="form-control input-sm" placeholder="johndoe@exampl.com" value="{{ old('email') }}">
+                                            <input type="text" name="email" id="email" class="form-control input-sm" placeholder="johndoe@example.com" value="{{ old('email') }}">
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
