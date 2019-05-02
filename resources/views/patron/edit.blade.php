@@ -279,54 +279,6 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
-                                                Please select your preferred t-shirt size.
-                                                <span class="asteriskField">
-                                                 *
-                                            </span>
-                                            </label>
-                                            <select class="form-control input-sm" id="shirt_sizes" name="shirt_sizes">
-                                                <option value="{{$patron->shirt_sizes}}">
-                                                    {{$patron->shirt_sizes}}
-                                                </option>
-                                                <option value="Toddler 2T">
-                                                    Toddler (2T)
-                                                </option>
-                                                <option value="Toddler 4T">
-                                                    Toddler (4T)
-                                                </option>
-                                                <option value="Youth Small">
-                                                    Youth Small
-                                                </option>
-                                                <option value="Youth Medium">
-                                                    Youth Medium
-                                                </option>
-                                                <option value="Youth Large">
-                                                    Youth Large
-                                                </option>
-                                                <option value="Adult Small">
-                                                    Adult Small
-                                                </option>
-                                                <option value="Adult Medium">
-                                                    Adult Medium
-                                                </option>
-                                                <option value="Adult Large">
-                                                    Adult Large
-                                                </option>
-                                                <option value=" Adult XL">
-                                                    Adult XL
-                                                </option>
-                                                <option value="Adult 2XL">
-                                                    Adult 2XL
-                                                </option>
-                                                <option value="Adult 3XL">
-                                                    Adult 3XL
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <label>
                                                 Do you give consent for TPL to use your like in photograph
                                                 <span class="asteriskField">
                                                  *
@@ -418,5 +370,5 @@
                 </div>
             </div>
         </section>
-
+    </div>
 @endsection

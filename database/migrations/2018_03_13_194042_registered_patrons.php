@@ -30,7 +30,6 @@ class RegisteredPatrons extends Migration
             $table->string('ending_package')->default('no');
             $table->string('book_reading_promise');
             $table->string('how_did_you_hear');
-            $table->string('shirt_sizes');
             $table->string('books_read')->default(0);
             $table->string('picture_release');
         });
@@ -46,7 +45,7 @@ class RegisteredPatrons extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('patrons');
+        //Schema::dropIfExists('patrons');
 
     }
 }

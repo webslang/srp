@@ -274,54 +274,6 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <div class="form-group">
-                                                <label>
-                                                    Please select your preferred t-shirt size.
-                                                    <span class="asteriskField">
-                                                 *
-                                            </span>
-                                                </label>
-                                                <select class="form-control input-sm" id="shirt_sizes" name="shirt_sizes" value="{{ old('shirt_sizes') }}">
-                                                    <option value="">
-
-                                                    </option>
-                                                    <option value="Toddler 2T" @if (old('shirt_sizes') == 'Toddler 2T') selected="selected" @endif>
-                                                        Toddler (2T)
-                                                    </option>
-                                                    <option value="Toddler 4T"  @if (old('shirt_sizes') == 'Toddler 4T') selected="selected" @endif>
-                                                        Toddler (4T)
-                                                    </option>
-                                                    <option value="Youth Small"  @if (old('shirt_sizes') == 'Youth Small') selected="selected" @endif>
-                                                        Youth Small
-                                                    </option>
-                                                    <option value="Youth Medium"  @if (old('shirt_sizes') == 'Youth Medium') selected="selected" @endif>
-                                                        Youth Medium
-                                                    </option>
-                                                    <option value="Youth Large"  @if (old('shirt_sizes') == 'Youth Large') selected="selected" @endif>
-                                                        Youth Large
-                                                    </option>
-                                                    <option value="Adult Small"  @if (old('shirt_sizes') == 'Adult Small') selected="selected" @endif>
-                                                        Adult Small
-                                                    </option>
-                                                    <option value="Adult Medium"  @if (old('shirt_sizes') == 'Adult Medium') selected="selected" @endif>
-                                                        Adult Medium
-                                                    </option>
-                                                    <option value="Adult Large"  @if (old('shirt_sizes') == 'Adult Large') selected="selected" @endif>
-                                                        Adult Large
-                                                    </option>
-                                                    <option value="Adult XL"  @if (old('shirt_sizes') == 'Adult XL') selected="selected" @endif>
-                                                        Adult XL
-                                                    </option>
-                                                    <option value="Adult 2XL"  @if (old('shirt_sizes') == 'Adult 2XL') selected="selected" @endif>
-                                                        Adult 2XL
-                                                    </option>
-                                                    <option value="Adult 3XL"  @if (old('shirt_sizes') == 'Adult 3XL') selected="selected" @endif>
-                                                        Adult 3XL
-                                                    </option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
                                                 Do you give consent for TPL to use your like in photograph
@@ -357,5 +309,5 @@
                 </div>
             </div>
         </section>
-
+    </div>
 @endsection

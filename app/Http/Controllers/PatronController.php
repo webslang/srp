@@ -69,8 +69,6 @@ class PatronController extends Controller
 
             'how_did_you_hear' => 'required',
 
-            'shirt_sizes' => 'required',
-
             'picture_release' => 'required',
 
         ],
@@ -153,8 +151,6 @@ class PatronController extends Controller
             'book_reading_promise' => 'required',
 
             'how_did_you_hear' => 'required',
-
-            'shirt_sizes' => 'required',
 
             'books_read' => 'required',
 

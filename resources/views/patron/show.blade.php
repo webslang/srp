@@ -95,14 +95,6 @@
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
                                     <label>
-                                        T-shirt Size.
-                                    </label>
-                                    <p>{{$patron->shirt_sizes}}</p>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <label>
                                          I Give TPL The Rights To Use My Photo
 
                                     </label>
@@ -151,7 +143,5 @@
                 </div>
             </div>
         </section>
-
-
-
+    </div>
 @endsection

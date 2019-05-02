@@ -50,7 +50,6 @@
                                 <th>Ending Package</th>
                                 <th>Book Reading Promise</th>
                                 <th>How Did You Hear</th>
-                                <th>Shirt Size</th>
                                 <th>Books Read</th>
                                 <th>Picture Release</th>
                                 <th>View</th>
@@ -76,7 +75,6 @@
                                             <td>{{$patron->ending_package}}</td>
                                             <td>{{$patron->book_reading_promise}}</td>
                                             <td>{{$patron->how_did_you_hear}}</td>
-                                            <td>{{$patron->shirt_sizes}}</td>
                                             <td>{{$patron->books_read}}</td>
                                             <td>{{$patron->picture_release}}</td>
 
@@ -110,5 +108,5 @@
                 </div>
             </div>
         </section>
-
+    </div>
 @endsection
