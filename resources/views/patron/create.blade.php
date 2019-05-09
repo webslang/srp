@@ -175,7 +175,7 @@
                                                 <option value="Pre-K" @if (old('grade_level') == 'Pre-K') selected="selected" @endif>
                                                     Pre-K
                                                 </option>
-                                                <option value="Kindergarten" @if (old('grade_level') == 'Pre-K') selected="selected" @endif>
+                                                <option value="Kindergarten" @if (old('grade_level') == 'Kindergarten') selected="selected" @endif>
                                                     Kindergarten
                                                 </option>
                                                 <option value="1st Grade" @if (old('grade_level') == '1st Grade') selected="selected" @endif>
