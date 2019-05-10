@@ -42,7 +42,7 @@
 
 
                         <div class="table-container">
-                            <form method="POST" action="{{ route('patron.store') }}"  role="form">
+                            <form method="POST" action="{{ route('summergroup.store') }}"  role="form">
                                 {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -128,7 +128,7 @@
                                                  *
                                             </span>
                                             </label>
-                                            <select id="grade_level" name="grade_level" class="form-control input-sm" value="{{ old('group_name') }}">
+                                            <select id="group_name" name="group_name" class="form-control input-sm" value="{{ old('group_name') }}">
                                                 <option value="">
 
                                                 </option>
@@ -336,7 +336,7 @@
 
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <input type="submit"  value="Save" class="btn btn-success btn-block">
-                                        <a href="{{ route('patron.create') }}" class="btn btn-info btn-block" >Back</a>
+                                        <a href="{{ route('summergroup.create') }}" class="btn btn-info btn-block" >Back</a>
                                     </div>
 
                                 </div>

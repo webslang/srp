@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\SummerGroup;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class SummerGroupController extends Controller
 {
@@ -20,7 +22,7 @@ class SummerGroupController extends Controller
      */
     public function index(Request $request)
     {
-        $SummerGroups = SummerGroup::search($request->input('q'))->get();
+        $summergroups = SummerGroup::search($request->input('q'))->get();
 
         return view('summergroup.index', compact('summergroups'));
     }
@@ -81,9 +83,9 @@ class SummerGroupController extends Controller
         );
 
 
-        Patron::create($request->all());
+        SummerGroup::create($request->all());
 
-        return redirect()->route('patron.create')
+        return redirect()->route('summergroup.create')
 
             ->with('success','Patron created successfully');
 
@@ -98,8 +100,8 @@ class SummerGroupController extends Controller
     public function show($id)
     {
         //
-        $patron= Patron::find($id);
-        return view('summergroup.show',compact('summergroups'));
+        $summergroup= SummerGroup::find($id);
+        return view('summergroup.show',compact('summergroup'));
     }
 
     /**
@@ -111,8 +113,8 @@ class SummerGroupController extends Controller
     public function edit($id)
     {
         //
-        $patron= Patron::find($id);
-        return view('summergroup.edit',compact('summergroups'));
+        $summergroup= SummerGroup::find($id);
+        return view('summergroup.edit',compact('summergroup'));
 
     }
 
@@ -162,7 +164,7 @@ class SummerGroupController extends Controller
 
         ]);
 
-        Patron::find($id)->update($request->all());
+        SummerGroup::find($id)->update($request->all());
         return redirect()->route('summergroup.edit', array($id))
             ->with('success','Summer Group info updated successfully');
     }
@@ -177,7 +179,7 @@ class SummerGroupController extends Controller
     {
         //
 
-        Patron::find($id)->delete();
+        SummerGroup::find($id)->delete();
 
         return redirect()->route('summergroup.index')
 

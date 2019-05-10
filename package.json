@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "ajv": "^6.10.0",
-        "imagemin": "^6.1.0"
+        "imagemin": "^6.1.0",
+        "npm": "^6.9.0"
     }
 }
