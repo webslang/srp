@@ -7,7 +7,7 @@
 
         <section class="content">
             <div class="col-md-10 offset-1">
-                <form method="GET" action="{{ route('summergroup.index') }}" accept-charset="UTF-8">
+                <form autocomplete="off" method="GET" action="{{ route('summergroup.index') }}" accept-charset="UTF-8">
                     <div id="custom-search-input">
                         <div class="input-group col-md-8">
                             <input  type="text" class="form-control input-lg" placeholder="enter patron or group's name" name="q" />

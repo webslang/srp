@@ -7,7 +7,7 @@
 
         <section class="content">
             <div class="col-md-10 offset-1">
-                <form method="GET" action="{{ route('patron.index') }}" accept-charset="UTF-8">
+                <form autocomplete="off" method="GET" action="{{ route('patron.index') }}" accept-charset="UTF-8">
                     <div id="custom-search-input">
                         <div class="input-group col-md-8">
                             <input  type="text" class="form-control input-lg" placeholder="enter patron's name" name="q" />
@@ -25,7 +25,6 @@
                         <div class="float-left"><h3>List of Patrons</h3></div>
                         <div class="float-right">
                             <div class="btn-group">
-
                                 <a href="{{ route('patron.create') }}" class="btn btn-info" >Add New</a>
 
                             </div>

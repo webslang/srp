@@ -35,7 +35,7 @@ class PatronController extends Controller
     public function create()
     {
         //
-        return view('Patron.create');
+        return view('patron.create');
     }
 
     /**
@@ -99,7 +99,7 @@ class PatronController extends Controller
     {
         //
         $patron= Patron::find($id);
-        return view('Patron.show',compact('patron'));
+        return view('patron.show',compact('patron'));
     }
 
     /**
@@ -112,7 +112,7 @@ class PatronController extends Controller
     {
         //
         $patron= Patron::find($id);
-        return view('Patron.edit',compact('patron'));
+        return view('patron.edit',compact('patron'));
 
     }
 

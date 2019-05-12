@@ -42,7 +42,7 @@
 
 
                         <div class="table-container">
-                            <form method="POST" action="{{ route('summergroup.store') }}"  role="form">
+                            <form autocomplete="off" method="POST" action="{{ route('summergroup.store') }}"  role="form">
                                 {{ csrf_field() }}
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -314,7 +314,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
-                                                Do you give consent for TPL to use your like in photograph
+                                                Do you give consent for TPL to use your likeness in photograph?
                                                 <span class="asteriskField">
                                                  *
                                             </span>
