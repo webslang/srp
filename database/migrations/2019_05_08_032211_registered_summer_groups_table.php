@@ -23,7 +23,7 @@ class RegisteredSummerGroupsTable extends Migration
             $table->string('group_name');
             $table->string('email');
             $table->tinyInteger('patron_age');
-            $table->char('zip_code',5);
+            $table->string('zip_code',5);
             $table->string('school_attended')->nullable(true);
             $table->string('grade_level');
             $table->string('beginning_package')->default('no');

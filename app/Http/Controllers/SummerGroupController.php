@@ -63,7 +63,7 @@ class SummerGroupController extends Controller
 
             'patron_age' => 'required|numeric',
 
-            'zip_code' => 'required',
+            'zip_code' => 'required|digits:5|integer',
 
             'grade_level' => 'required',
 
@@ -77,6 +77,7 @@ class SummerGroupController extends Controller
             [
                 'email.email'    => 'Please enter correct email format "jon@exampl.com"',
                 'patron_age.numeric'    => 'Please enter numbers only for patron age.',
+                'zip_code.integer'    => 'Please enter correct zip code (ex. 35401)',
             ]
 
 

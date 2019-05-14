@@ -22,7 +22,7 @@
                 <br>
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="float-left"><h3>List of Patrons</h3></div>
+                        <div class="float-left"><h3>List of Groups & Patrons</h3></div>
                         <div class="float-right">
                             <div class="btn-group">
 

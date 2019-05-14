@@ -163,7 +163,7 @@
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
                                             <label>
-                                                What is your current grade level?
+                                                What is your grade level in the Fall?
                                                 <span class="asteriskField">
                                                  *
                                             </span>
