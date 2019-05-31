@@ -43,7 +43,7 @@
 
                         <div class="table-container">
                             <form autocomplete="off" method="POST" action="{{ route('patron.store') }}"  role="form">
-                                {{ csrf_field() }}
+                                @csrf
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <div class="form-group">
